@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PujaPath">
+  <rect width="64" height="64" rx="10" fill="#1c1410"/>
+  <path fill="#c9a227" d="M32 8c6 16 16 26 32 32-16 6-26 16-32 32C26 56 16 46 0 40 16 34 26 24 32 8z" transform="scale(0.72) translate(12 12)"/>
+  <circle cx="32" cy="32" r="6" fill="#9b1d1d"/>
+</svg>

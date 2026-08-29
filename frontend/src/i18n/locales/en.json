@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "siteName": "PujaPath",
+    "siteTitle": "PujaPath | Purba Bardhaman Durga Puja Guide",
+    "siteDescription": "Discover the colours, stories and traditions of Durga Puja across Purba Bardhaman."
+  },
+  "brand": {
+    "name": "PujaPath",
+    "tagline": "Purba Bardhaman Durga Puja Guide"
+  },
+  "nav": {
+    "home": "Home",
+    "explore": "Explore Puja",
+    "map": "Map",
+    "nearMe": "Near Me",
+    "routes": "Routes",
+    "gallery": "Gallery",
+    "emergency": "Emergency",
+    "about": "About",
+    "contact": "Contact",
+    "assistant": "AI Assistant",
+    "search": "Search",
+    "searchPlaceholder": "Search Puja, area or theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "language": "Language",
+    "login": "Log in",
+    "register": "Register",
+    "logout": "Log out",
+    "admin": "Admin"
+  },
+  "languages": {
+    "en": "English",
+    "bn": "বাংলা",
+    "hi": "हिन्दी"
+  },
+  "hero": {
+    "eyebrow": "Purba Bardhaman",
+    "title": "PujaPath",
+    "subtitle": "Purba Bardhaman Durga Puja Guide",
+    "lead": "Discover the colours, stories and traditions of Durga Puja across Purba Bardhaman.",
+    "explorePuja": "Explore Puja",
+    "exploreMap": "Explore Map",
+    "artworkCredit": "Decorative vintage artwork. Not a photograph of a real pandal.",
+    "artworkAlt": "Decorative vintage-style artwork of a Bengali Durga Puja evening with lights, kash flowers and a glowing pandal. This is artwork, not a real photograph."
+  },
+  "home": {
+    "featured": "Featured Puja",
+    "featuredIntro": "A first look at how Puja listings will appear. These cards are sample records for design and testing.",
+    "featuredEmpty": "Verified Puja listings will appear here once administrators publish them.",
+    "exploreByTheme": "Explore by Theme",
+    "themeTitle": "Stories told through clay, light and craft",
+    "themeIntro": "Browse sample theme groups. Real themes will come from verified Puja records.",
+    "nearMe": "Puja Near Me",
+    "nearMeIntro": "On a phone, nearby Puja should be a tap away. Live distance will use your permission on the Near Me page.",
+    "nearMeDemoNote": "Distances below are sample figures for layout only. They are not calculated from your location.",
+    "nearMeFallback": "If location is not available, search by area instead.",
+    "openNearMe": "Open Near Me",
+    "popular": "Popular Locations",
+    "emergency": "Emergency Assistance",
+    "emergencyIntro": "Safety contacts are shown only after they are verified by administrators. PujaPath does not invent phone numbers.",
+    "openEmergency": "Open Emergency Centre",
+    "noInventedNumbers": "No phone number until verified",
+    "assistant": "PujaPath Assistant",
+    "assistantIntro": "Ask about verified Puja, facilities and safety. The assistant will not invent records.",
+    "assistantTrust": "Answers will be grounded in application data. Until the assistant is connected, these questions open the assistant page.",
+    "openAssistant": "Talk to the assistant",
+    "about": "About PujaPath",
+    "aboutIntro": "A cultural guide for Durga Puja across Purba Bardhaman.",
+    "aboutBody": "PujaPath is being built so families, travellers and neighbours can find pandals, themes, photographs, maps and care for one another — in Bangla, English and Hindi.",
+    "readAbout": "Read more",
+    "viewAll": "View all",
+    "demoNotice": "Sample listings are marked DEMO DATA. They are not verified real Puja records."
+  },
+  "common": {
+    "loading": "Loading…",
+    "retry": "Try again",
+    "error": "Something went wrong. Please try again.",
+    "empty": "Nothing to show yet.",
+    "viewDetails": "View Details",
+    "getDirections": "Get Directions",
+    "comingSoon": "This section is being built in a later phase.",
+    "demoData": "DEMO DATA",
+    "verified": "Verified",
+    "unverified": "Unverified",
+    "lastUpdated": "Last updated",
+    "approximateCrowd": "Approximate crowd information",
+    "approximateCrowdShort": "approximate",
+    "distanceKm": "{{km}} km",
+    "demoDistance": "sample distance",
+    "youAreHere": "You are here",
+    "locationDenied": "Location permission was not granted.",
+    "emergencyDisclaimer": "Emergency information should be verified when necessary."
+  },
+  "pages": {
+    "explore": {
+      "title": "Explore Puja",
+      "intro": "Browse Durga Puja pandals across Purba Bardhaman."
+    },
+    "map": {
+      "title": "Map",
+      "intro": "See registered Puja locations on an interactive map."
+    },
+    "nearMe": {
+      "title": "Near Me",
+      "intro": "Find Puja closest to your current location."
+    },
+    "routes": {
+      "title": "Route Planner",
+      "intro": "Select several Puja locations and plan your evening."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "intro": "Real photographs from Puja committees and verified uploads."
+    },
+    "emergency": {
+      "title": "Emergency Centre",
+      "intro": "Verified medical, police, fire and safety contacts."
+    },
+    "about": {
+      "title": "About PujaPath",
+      "intro": "A cultural guide to Durga Puja in Purba Bardhaman."
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "Write to the PujaPath team or report incorrect information."
+    },
+    "assistant": {
+      "title": "PujaPath Assistant",
+      "intro": "Ask questions about verified Puja, facilities and safety information."
+    },
+    "login": {
+      "title": "Log in"
+    },
+    "register": {
+      "title": "Create an account"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "intro": "This path does not exist on PujaPath."
+    }
+  },
+  "crowd": {
+    "label": "Crowd",
+    "low": "Low",
+    "moderate": "Moderate",
+    "heavy": "Heavy",
+    "unknown": "Not reported"
+  },
+  "facilities": {
+    "label": "Facilities",
+    "parking": "Parking",
+    "toilet": "Toilet",
+    "food": "Food",
+    "medical": "Medical",
+    "accessibility": "Accessibility",
+    "available": "available",
+    "unavailable": "not listed"
+  },
+  "themes": {
+    "heritage": "Heritage",
+    "heritageDesc": "Terracotta, temple memory and older neighbourhood craft.",
+    "folk": "Folk",
+    "folkDesc": "Rural colour, dhak and community performance.",
+    "traditional": "Traditional",
+    "traditionalDesc": "Classic Durga iconography and ritual form.",
+    "contemporary": "Contemporary",
+    "contemporaryDesc": "New materials and present-day stories — still labelled as sample groups."
+  },
+  "homeEmergency": {
+    "medical": "Medical",
+    "medicalDesc": "Hospitals and ambulance contacts once verified.",
+    "police": "Police / Safety",
+    "policeDesc": "Police and safety desks from admin-managed records.",
+    "fire": "Fire",
+    "fireDesc": "Fire service contacts when a verified number exists.",
+    "women": "Women Safety",
+    "womenDesc": "Women’s safety resources after verification.",
+    "child": "Child Safety",
+    "childDesc": "Child safety resources after verification."
+  },
+  "homeAssistant": {
+    "q1": "Which Puja has a traditional theme?",
+    "q2": "Which sample listings mention parking?",
+    "q3": "Where can I find verified emergency help?"
+  },
+  "pujaCard": {
+    "placeholderVisual": "Placeholder visual. Not a real Puja photograph.",
+    "realPhotoAlt": "Photograph of {{name}}",
+    "notFound": "This sample listing is not in the demo set."
+  },
+  "sos": {
+    "label": "SOS",
+    "title": "Emergency",
+    "hint": "Choose a service, then press Call. PujaPath will not place a call for you.",
+    "ambulance": "Ambulance",
+    "police": "Police",
+    "fire": "Fire",
+    "womenSafety": "Women Safety",
+    "nearbyHospital": "Nearby Hospital",
+    "call": "Call",
+    "close": "Close",
+    "unavailable": "No verified number is available yet."
+  },
+  "footer": {
+    "blurb": "A guide to Durga Puja across Purba Bardhaman — themes, stories, maps and care for the community.",
+    "trust": "Locations and emergency contacts are shown only from admin-managed records.",
+    "rights": "PujaPath. Built for Purba Bardhaman.",
+    "explore": "Explore",
+    "help": "Help"
+  }
+}
