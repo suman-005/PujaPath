@@ -1,0 +1,4 @@
+﻿category,name,phone,location,verified,source,verification_notes,last_verified_at
+# Categories: Police, Ambulance, Fire, Hospital, Women Safety, Child Support, Disaster Management
+# EXAMPLE FORMAT (DO NOT INVENT NUMBERS):
+# Police,Burdwan Police Station,0342-XXXXXXX,Burdwan Town,true,West Bengal Police Official Portal,Verified via official landline registry,2026-09-10

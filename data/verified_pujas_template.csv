@@ -1,0 +1,3 @@
+﻿name,area,address,latitude,longitude,theme,description,opening_time,closing_time,parking,toilet,food,medical_assistance,accessibility,contact,crowd_status,verified,source,verification_notes,verified_by
+# EXAMPLE FORMAT (DO NOT COMMIT FAKE DATA):
+# Burdwan Sarbojanin,Burdwan Town,Curzon Gate Area,23.2351,87.8632,Eco Heritage,Traditional community puja with eco-friendly theme,08:00,23:00,true,true,false,true,true,+91-XXXXXXXXXX,Low,true,Official District Puja Directory / Press Release 2026,Cross-verified with committee representative,Admin
