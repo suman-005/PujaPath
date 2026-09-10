@@ -17,8 +17,14 @@ def get_pujas(
     search: Optional[str] = Query(None, description="Search name, description, area, address, or theme"),
     area: Optional[str] = Query(None, description="Filter by area"),
     theme: Optional[str] = Query(None, description="Filter by theme"),
+    parking: Optional[bool] = Query(None, description="Filter by parking availability"),
+    toilet: Optional[bool] = Query(None, description="Filter by toilet availability"),
+    food: Optional[bool] = Query(None, description="Filter by food availability"),
+    medical_assistance: Optional[bool] = Query(None, description="Filter by medical assistance"),
+    accessibility: Optional[bool] = Query(None, description="Filter by wheelchair/accessibility"),
+    crowd_status: Optional[str] = Query(None, description="Filter by crowd status (Low, Moderate, Heavy)"),
     page: int = Query(1, ge=1, description="Page number"),
-    page_size: int = Query(20, ge=1, le=100, description="Items per page"),
+    page_size: int = Query(12, ge=1, le=100, description="Items per page"),
     db: Session = Depends(get_db),
 ):
     query = select(Puja)
@@ -40,6 +46,24 @@ def get_pujas(
 
     if theme:
         query = query.where(Puja.theme.ilike(f"%{theme.strip()}%"))
+
+    if parking is not None:
+        query = query.where(Puja.parking == parking)
+
+    if toilet is not None:
+        query = query.where(Puja.toilet == toilet)
+
+    if food is not None:
+        query = query.where(Puja.food == food)
+
+    if medical_assistance is not None:
+        query = query.where(Puja.medical_assistance == medical_assistance)
+
+    if accessibility is not None:
+        query = query.where(Puja.accessibility == accessibility)
+
+    if crowd_status:
+        query = query.where(Puja.crowd_status.ilike(crowd_status.strip()))
 
     total = db.scalar(select(func.count()).select_from(query.subquery())) or 0
     offset = (page - 1) * page_size

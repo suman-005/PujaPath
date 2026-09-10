@@ -1,4 +1,5 @@
-﻿from typing import List, Union
+from typing import Optional
+from typing import List, Union
 
 from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -19,6 +20,9 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
 
     ENVIRONMENT: str = "development"
+    OPENAI_API_KEY: Optional[str] = None
+    AI_MODEL: str = "gpt-4o-mini"
+    AI_MAX_TOKENS: int = 500
 
     SECRET_KEY: str = (
         "dev-secret-key-change-in-production-min-32-chars-long"

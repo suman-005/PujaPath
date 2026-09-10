@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from app.api.v1.endpoints import (
+    assistant,
     admin,
     auth,
     contact,
@@ -23,3 +24,4 @@ api_router.include_router(emergency.router, prefix="/emergency", tags=["Emergenc
 api_router.include_router(reports.router, prefix="/reports", tags=["Reports"])
 api_router.include_router(crowd_reports.router, tags=["Crowd Reports"])
 api_router.include_router(contact.router, prefix="/contact", tags=["Contact"])
+api_router.include_router(assistant.router, prefix="/assistant", tags=["Assistant"])
