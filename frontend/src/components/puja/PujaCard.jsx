@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { getDirectionsUrl } from '../../utils/directions';
 
@@ -6,6 +6,7 @@ export function PujaCard({ puja, distance = null }) {
   if (!puja) return null;
 
   const directionsUrl = getDirectionsUrl(puja.latitude, puja.longitude);
+  const isVerified = Boolean(puja.verified);
 
   return (
     <article
@@ -21,8 +22,8 @@ export function PujaCard({ puja, distance = null }) {
       }}
     >
       <div style={{ padding: '16px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px' }}>
-          <h3 style={{ margin: '0 0 6px 0', fontSize: '18px', color: '#8b0000', fontWeight: '700' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px', marginBottom: '6px' }}>
+          <h3 style={{ margin: 0, fontSize: '18px', color: '#8b0000', fontWeight: '700' }}>
             <Link to={`/puja/${puja.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
               {puja.name}
             </Link>
@@ -40,6 +41,43 @@ export function PujaCard({ puja, distance = null }) {
               }}
             >
               📍 {distance} km away
+            </span>
+          )}
+        </div>
+
+        {/* Trust Badge */}
+        <div style={{ marginBottom: '8px' }}>
+          {isVerified ? (
+            <span
+              style={{
+                fontSize: '11px',
+                fontWeight: '700',
+                color: '#137333',
+                backgroundColor: '#e6f4ea',
+                padding: '2px 8px',
+                borderRadius: '4px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px'
+              }}
+            >
+              ✓ Verified Puja
+            </span>
+          ) : (
+            <span
+              style={{
+                fontSize: '11px',
+                fontWeight: '700',
+                color: '#b06000',
+                backgroundColor: '#fef7e0',
+                padding: '2px 8px',
+                borderRadius: '4px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px'
+              }}
+            >
+              ⚠️ Demo / Unverified
             </span>
           )}
         </div>
