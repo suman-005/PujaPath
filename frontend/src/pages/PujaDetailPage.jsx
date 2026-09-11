@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 ﻿import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { api } from '../services/api';
@@ -6,6 +7,7 @@ import { CrowdReportForm } from '../components/crowd/CrowdReportForm';
 import { getDirectionsUrl } from '../utils/directions';
 
 export function PujaDetailPage() {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [puja, setPuja] = useState(null);
   const [images, setImages] = useState([]);
