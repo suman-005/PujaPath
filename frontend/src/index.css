@@ -174,3 +174,19 @@ body {
   clip: auto;
   white-space: normal;
 }
+
+/* Stage 22 Mobile Responsive Navigation & UX Polish */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-nav-toggle {
+    display: flex !important;
+  }
+}
+
+button, a {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+}
