@@ -74,7 +74,11 @@
     "noAvailable": "বর্তমানে কোনো পুজোর তথ্য উপলব্ধ নেই।",
     "detailsTitle": "পুজো সম্পর্কিত তথ্য",
     "availableFacilities": "উপলব্ধ সুযোগ-সুবিধা",
-    "backToList": "← সব পুজোর তালিকায় ফিরুন"
+    "backToList": "← সব পুজোর তালিকায় ফিরুন",
+    "themePending2026": "২০২৬ থিম: আনুষ্ঠানিক ঘোষণার অপেক্ষায়",
+    "verifiedThemeBadge": "যাচাইকৃত ২০২৬ থিম",
+    "unverifiedWarning": "অযাচাইকৃত তথ্য",
+    "submitUpdateBtn": "২০২৬ তথ্য জমা দিন"
   },
   "map": {
     "title": "ইন্টারেক্টিভ পুজো ম্যাপ",
@@ -147,5 +151,16 @@
     "managePujas": "পুজো পরিচালনা",
     "manageUsers": "ব্যবহারকারী পরিচালনা",
     "role": "ভূমিকা"
+  },
+  "submissions": {
+    "title": "পুজো তথ্য যাচাই ও অনুমোদন",
+    "pending": "পর্যালোচনাধীন",
+    "verified": "যাচাইকৃত",
+    "rejected": "প্রত্যাখ্যাত",
+    "needsEvidence": "অতিরিক্ত প্রমাণ প্রয়োজন",
+    "approveBtn": "যাচাই ও প্রকাশ করুন",
+    "rejectBtn": "প্রত্যাখ্যান করুন",
+    "sourceAttribution": "উৎস নির্দেশ",
+    "notes": "অ্যাডমিন পর্যালোচনার মন্তব্য"
   }
 }

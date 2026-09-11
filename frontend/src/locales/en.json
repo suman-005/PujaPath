@@ -74,7 +74,11 @@
     "noAvailable": "No Puja locations are currently available.",
     "detailsTitle": "About this Puja",
     "availableFacilities": "Available Facilities",
-    "backToList": "← Back to All Pujas"
+    "backToList": "← Back to All Pujas",
+    "themePending2026": "2026 Theme: Announcement Pending",
+    "verifiedThemeBadge": "Verified 2026 Theme",
+    "unverifiedWarning": "Unverified / Crowdsourced",
+    "submitUpdateBtn": "Submit 2026 Information"
   },
   "map": {
     "title": "Interactive Puja Map",
@@ -147,5 +151,16 @@
     "managePujas": "Manage Pujas",
     "manageUsers": "Manage Users",
     "role": "Role"
+  },
+  "submissions": {
+    "title": "Puja Verification Submissions",
+    "pending": "Pending Review",
+    "verified": "Verified",
+    "rejected": "Rejected",
+    "needsEvidence": "Needs Evidence",
+    "approveBtn": "Verify & Publish",
+    "rejectBtn": "Reject Submission",
+    "sourceAttribution": "Source Attribution",
+    "notes": "Admin Review Notes"
   }
 }
