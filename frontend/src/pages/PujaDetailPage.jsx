@@ -106,10 +106,10 @@ export function PujaDetailPage() {
           </div>
         </header>
 
-        {/* Real / Verified Photo Gallery */}
-        {images && images.length > 0 && (
-          <section style={{ marginBottom: '24px' }}>
-            <h2 style={{ fontSize: '18px', color: '#333', marginBottom: '12px' }}>Photographs & Gallery</h2>
+        {/* Real / Verified Photo Gallery & Empty State */}
+        <section style={{ marginBottom: '24px' }}>
+          <h2 style={{ fontSize: '18px', color: '#333', marginBottom: '12px' }}>{t('noRealPhotosTitle') || 'Photographs & Gallery'}</h2>
+          {images && images.length > 0 ? (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px' }}>
               {images.map((img) => (
                 <div key={img.id} style={{ borderRadius: '6px', overflow: 'hidden', border: '1px solid #e0e0e0' }}>
@@ -137,8 +137,33 @@ export function PujaDetailPage() {
                 </div>
               ))}
             </div>
-          </section>
-        )}
+          ) : (
+            <div style={{
+              backgroundColor: '#f8f9fa',
+              border: '1px dashed #ced4da',
+              borderRadius: '8px',
+              padding: '20px',
+              textAlign: 'center'
+            }}>
+              <div style={{
+                display: 'inline-block',
+                backgroundColor: '#e8eaed',
+                color: '#5f6368',
+                fontWeight: '600',
+                fontSize: '11px',
+                letterSpacing: '0.5px',
+                padding: '3px 8px',
+                borderRadius: '4px',
+                marginBottom: '8px'
+              }}>
+                {t('photoStatusNeeded') || 'OWNER / COMMITTEE PHOTO NEEDED'}
+              </div>
+              <p style={{ margin: 0, color: '#555', fontSize: '14px' }}>
+                {t('noRealPhotosMsg') || 'Real Puja photographs will be added after verification.'}
+              </p>
+            </div>
+          )}
+        </section>
 
         {puja.description && (
           <section style={{ marginBottom: '24px' }}>

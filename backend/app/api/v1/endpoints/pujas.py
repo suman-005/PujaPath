@@ -23,6 +23,7 @@ def get_pujas(
     medical_assistance: Optional[bool] = Query(None, description="Filter by medical assistance"),
     accessibility: Optional[bool] = Query(None, description="Filter by wheelchair/accessibility"),
     crowd_status: Optional[str] = Query(None, description="Filter by crowd status (Low, Moderate, Heavy)"),
+    verified: Optional[bool] = Query(None, description="Filter by verification status"),
     page: int = Query(1, ge=1, description="Page number"),
     page_size: int = Query(12, ge=1, le=100, description="Items per page"),
     db: Session = Depends(get_db),
@@ -64,6 +65,9 @@ def get_pujas(
 
     if crowd_status:
         query = query.where(Puja.crowd_status.ilike(crowd_status.strip()))
+
+    if verified is not None:
+        query = query.where(Puja.verified == verified)
 
     total = db.scalar(select(func.count()).select_from(query.subquery())) or 0
     offset = (page - 1) * page_size

@@ -162,5 +162,9 @@
     "rejectBtn": "Reject Submission",
     "sourceAttribution": "Source Attribution",
     "notes": "Admin Review Notes"
-  }
+  },
+  "noRealPhotosTitle": "Photographs & Gallery",
+  "noRealPhotosMsg": "Real Puja photographs will be added after verification.",
+  "photoStatusNeeded": "OWNER / COMMITTEE PHOTO NEEDED",
+  "demoRecordBadge": "Demo / Unverified Record"
 }
