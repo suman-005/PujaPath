@@ -1,0 +1,9 @@
+﻿category,name,phone,location,verified,source,verification_notes,last_verified_at
+Police,Burdwan Sadar Police Station,0342-2662495,Purba Bardhaman Sadar,true,"West Bengal Police Official Directory (purbabardhaman.nic.in)","Official Landline for Burdwan Sadar PS. Cross-referenced with WB Police district portal.",2026-09-10
+Police,District Police Control Room (Purba Bardhaman),0342-2662498,SP Office, Burdwan,true,"Purba Bardhaman District Administration Portal (purbabardhaman.nic.in)","Official 24x7 district police helpline.",2026-09-10
+Hospital,Burdwan Medical College & Hospital (BMCH),0342-2656661,Baburbag, Bardhaman,true,"Department of Health & Family Welfare, Govt. of West Bengal / BMCH Portal","Main tertiary referral hospital and trauma emergency in Purba Bardhaman.",2026-09-10
+Fire,Burdwan Fire Station,0342-2560101,Burdwan Town,true,"West Bengal Fire & Emergency Services Directory","Official divisional fire station landline for Burdwan Town.",2026-09-10
+Ambulance,National Emergency Ambulance Service,108,Purba Bardhaman (Statewide),true,"Govt. of West Bengal Department of Health & Family Welfare","Official centralized toll-free medical ambulance emergency response service.",2026-09-10
+Child Support,Childline India Emergency Helpline,1098,Purba Bardhaman (Nationwide),true,"Ministry of Women & Child Development / West Bengal SCPCR","Standard emergency 24x7 toll-free helpline for children in need of care and protection.",2026-09-10
+Women Safety,West Bengal Women Helpline,1091,Purba Bardhaman (Statewide),true,"West Bengal Police Women & Child Safety Division","Official emergency response helpline for women.",2026-09-10
+Disaster Management,District Emergency Operation Centre (DEOC),0342-2662580,Collectorate Compound, Burdwan,true,"Purba Bardhaman District Disaster Management Authority (DDMA)","Official district collectorate emergency operations desk.",2026-09-10
