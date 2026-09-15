@@ -139,7 +139,7 @@ export const api = {
 export default api;
 
 export const askAssistant = async (question) => {
-  const res = await fetch(\/assistant/query\, {
+  const res = await fetch(${API_BASE_URL}/assistant/query, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ question })
