@@ -134,16 +134,9 @@ export const api = {
   // Crowd Reports
   submitCrowdReport: (data) => request('/crowd-reports', { method: 'POST', body: JSON.stringify(data) }),
   getPujaCrowdReports: (pujaId) => request(`/pujas/${pujaId}/crowd-reports`),
+  askAssistant: (data) => request('/assistant/query', { method: 'POST', body: JSON.stringify(data) }),
 };
 
 export default api;
 
-export const askAssistant = async (question) => {
-  const res = await fetch(${API_BASE_URL}/assistant/query, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question })
-  });
-  if (!res.ok) throw new Error('Failed to query assistant');
-  return res.json();
-};
+export const askAssistant = (data) => api.askAssistant(data);
