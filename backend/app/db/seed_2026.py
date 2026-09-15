@@ -1,6 +1,7 @@
 import json
 import os
 from pathlib import Path
+from sqlalchemy import text
 
 try:
     from app.db.session import SessionLocal
@@ -60,26 +61,50 @@ def seed_pujas_idempotent(seed_file=None):
                     existing.longitude = rec.get('longitude')
                 updated += 1
             else:
-                new_p = Puja(
-                    id=rec.get('id'),
-                    name=rec.get('name'),
-                    area=rec.get('area'),
-                    address=rec.get('address'),
-                    latitude=rec.get('latitude'),
-                    longitude=rec.get('longitude'),
-                    theme=rec.get('theme'),
-                    description=desc,
-                    parking=parking_val,
-                    toilet=toilet_val,
-                    medical_assistance=med_val,
-                    accessibility=access_val,
-                    food=rec.get('food', False),
-                    verified=rec.get('verified', False)
-                )
-                db.add(new_p)
+                # Use raw SQL insert for explicit ID retention without tripping sequence errors
+                insert_stmt = text("""
+                    INSERT INTO pujas (
+                        id, name, area, address, latitude, longitude,
+                        theme, description, parking, toilet, medical_assistance,
+                        accessibility, food, verified, created_at, updated_at
+                    ) VALUES (
+                        :id, :name, :area, :address, :latitude, :longitude,
+                        :theme, :description, :parking, :toilet, :medical_assistance,
+                        :accessibility, :food, :verified, NOW(), NOW()
+                    )
+                    ON CONFLICT (id) DO UPDATE SET
+                        theme = EXCLUDED.theme,
+                        description = COALESCE(EXCLUDED.description, pujas.description),
+                        latitude = COALESCE(pujas.latitude, EXCLUDED.latitude),
+                        longitude = COALESCE(pujas.longitude, EXCLUDED.longitude)
+                """)
+                db.execute(insert_stmt, {
+                    'id': rec.get('id'),
+                    'name': rec.get('name'),
+                    'area': rec.get('area'),
+                    'address': rec.get('address'),
+                    'latitude': rec.get('latitude'),
+                    'longitude': rec.get('longitude'),
+                    'theme': rec.get('theme'),
+                    'description': desc,
+                    'parking': parking_val,
+                    'toilet': toilet_val,
+                    'medical_assistance': med_val,
+                    'accessibility': access_val,
+                    'food': rec.get('food', False),
+                    'verified': rec.get('verified', False)
+                })
                 inserted += 1
 
         db.commit()
+
+        # Update Postgres sequence to highest ID so future inserts won't conflict
+        try:
+            db.execute(text("SELECT setval(pg_get_serial_sequence('pujas', 'id'), coalesce(max(id), 1)) FROM pujas;"))
+            db.commit()
+        except Exception:
+            pass
+
         print(f'Seed execution finished: {inserted} inserted, {updated} existing preserved/reconciled.')
         
         total_now = db.query(Puja).count()
