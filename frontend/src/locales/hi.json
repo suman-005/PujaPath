@@ -210,7 +210,11 @@
   "pujaCard": {
     "notFound": "कोई पूजा नहीं मिली",
     "placeholderVisual": "पंडाल की तस्वीर जल्द आ रही है",
-    "realPhotoAlt": "सत्यापित तस्वीर —"
+    "realPhotoAlt": "सत्यापित तस्वीर —",
+    "photoComingSoon": "वास्तविक पूजा फोटो जल्द जोड़ा जाएगा",
+    "locationPending": "सटीक मानचित्र स्थान सत्यापन प्रक्रियाधीन है।",
+    "viewDetails": "विवरण देखें",
+    "getDirections": "दिशा-निर्देश"
   },
   "pages": {
     "notFound": {
@@ -223,5 +227,17 @@
   "medical_assistance": "चिकित्सा सहायता",
   "search": "खोजें",
   "sort": "क्रमबद्ध करें",
-  "theme": "थीम"
+  "theme": "थीम",
+  "trust": {
+    "verified": "आधिकारिक / सत्यापित",
+    "community": "समुदाय द्वारा प्रस्तुत",
+    "pendingVerification": "सत्यापन लंबित",
+    "themeSubmitted": "2026 की थीम प्रस्तुत",
+    "locationPending": "स्थान सत्यापन लंबित",
+    "demo": "डेमो रिकॉर्ड"
+  },
+  "gallery": {
+    "emptyTitle": "पूजा चित्रशाला",
+    "emptyDesc": "अधिकृत और सत्यापित वास्तविक पूजा तस्वीरें जमा होने के बाद यहां दिखाई जाएंगी।"
+  }
 }

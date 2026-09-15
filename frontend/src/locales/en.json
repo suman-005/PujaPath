@@ -210,7 +210,11 @@
   "pujaCard": {
     "notFound": "Puja not found",
     "placeholderVisual": "Pandal representation coming soon",
-    "realPhotoAlt": "Authorized photograph of"
+    "realPhotoAlt": "Authorized photograph of",
+    "photoComingSoon": "Real Puja photo not yet available",
+    "locationPending": "Exact map location is pending verification.",
+    "viewDetails": "View Details",
+    "getDirections": "Directions"
   },
   "pages": {
     "notFound": {
@@ -223,5 +227,17 @@
   "medical_assistance": "Medical Camp",
   "search": "Search",
   "sort": "Sort",
-  "theme": "Theme"
+  "theme": "Theme",
+  "trust": {
+    "verified": "Official / Verified",
+    "community": "Community Submitted",
+    "pendingVerification": "Verification Pending",
+    "themeSubmitted": "2026 Theme Submitted",
+    "locationPending": "Location Verification Pending",
+    "demo": "Demo Record"
+  },
+  "gallery": {
+    "emptyTitle": "Puja Photo Gallery",
+    "emptyDesc": "Authentic Puja photographs will appear here after authorized submission and verification."
+  }
 }

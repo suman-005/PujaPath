@@ -210,7 +210,11 @@
   "pujaCard": {
     "notFound": "কোনো পূজা পাওয়া যায়নি",
     "placeholderVisual": "মণ্ডপের ছবি শীঘ্রই আসছে",
-    "realPhotoAlt": "অনুমোদিত পূজার আলোকচিত্র —"
+    "realPhotoAlt": "অনুমোদিত পূজার আলোকচিত্র —",
+    "photoComingSoon": "আসল পুজোর ছবি শীঘ্রই যোগ করা হবে",
+    "locationPending": "সঠিক মানচিত্র অবস্থান যাচাইকরণ প্রক্রিয়াধীন।",
+    "viewDetails": "বিস্তারিত দেখুন",
+    "getDirections": "দিকনির্দেশ"
   },
   "pages": {
     "notFound": {
@@ -223,5 +227,17 @@
   "medical_assistance": "চিকিৎসা শিবির",
   "search": "অনুসন্ধান",
   "sort": "সাজান",
-  "theme": "থিম"
+  "theme": "থিম",
+  "trust": {
+    "verified": "অফিসিয়াল / যাচাইকৃত",
+    "community": "কমিউনিটি দ্বারা জমা",
+    "pendingVerification": "যাচাই প্রক্রিয়াধীন",
+    "themeSubmitted": "২০২৬-এর থিম জমা হয়েছে",
+    "locationPending": "অবস্থান যাচাই প্রক্রিয়াধীন",
+    "demo": "ডেমো রেকর্ড"
+  },
+  "gallery": {
+    "emptyTitle": "পূজা চিত্রশালা",
+    "emptyDesc": "অনুমোদিত ও যাচাইকৃত আসল পুজোর ছবি জমা হলে এখানে প্রদর্শিত হবে।"
+  }
 }
