@@ -9,9 +9,15 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom', 'i18next', 'react-i18next'],
-          leaflet: ['leaflet', 'react-leaflet']
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('leaflet') || id.includes('react-leaflet')) {
+              return 'leaflet';
+            }
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom') || id.includes('i18next')) {
+              return 'vendor';
+            }
+          }
         }
       }
     }
