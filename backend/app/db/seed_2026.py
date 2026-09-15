@@ -45,10 +45,16 @@ def seed_pujas_idempotent(seed_file=None):
             if not existing and rec.get('name') and rec.get('area'):
                 existing = db.query(Puja).filter(Puja.name == rec['name'], Puja.area == rec['area']).first()
 
+            desc = rec.get('theme_description') or rec.get('description')
+            parking_val = rec.get('parking') if 'parking' in rec else rec.get('parking_available', False)
+            toilet_val = rec.get('toilet') if 'toilet' in rec else rec.get('restrooms_available', False)
+            med_val = rec.get('medical_assistance') if 'medical_assistance' in rec else rec.get('medical_facility', False)
+            access_val = rec.get('accessibility') if 'accessibility' in rec else rec.get('wheelchair_accessible', False)
+
             if existing:
                 existing.theme = rec.get('theme', existing.theme)
-                existing.theme_year = rec.get('theme_year', existing.theme_year)
-                existing.theme_description = rec.get('theme_description', existing.theme_description)
+                if desc:
+                    existing.description = desc
                 if existing.latitude is None and rec.get('latitude') is not None:
                     existing.latitude = rec.get('latitude')
                     existing.longitude = rec.get('longitude')
@@ -62,13 +68,13 @@ def seed_pujas_idempotent(seed_file=None):
                     latitude=rec.get('latitude'),
                     longitude=rec.get('longitude'),
                     theme=rec.get('theme'),
-                    theme_year=rec.get('theme_year'),
-                    theme_description=rec.get('theme_description'),
-                    verified=rec.get('verified', False),
-                    wheelchair_accessible=rec.get('wheelchair_accessible', False),
-                    parking_available=rec.get('parking_available', False),
-                    restrooms_available=rec.get('restrooms_available', False),
-                    medical_facility=rec.get('medical_facility', False)
+                    description=desc,
+                    parking=parking_val,
+                    toilet=toilet_val,
+                    medical_assistance=med_val,
+                    accessibility=access_val,
+                    food=rec.get('food', False),
+                    verified=rec.get('verified', False)
                 )
                 db.add(new_p)
                 inserted += 1
