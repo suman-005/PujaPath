@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://pujapath-lt0c.onrender.com/api/v1';
 
 const TOKEN_KEY = 'pujapath_access_token';
 const USER_KEY = 'pujapath_user';
@@ -137,3 +137,13 @@ export const api = {
 };
 
 export default api;
+
+export const askAssistant = async (question) => {
+  const res = await fetch(\/assistant/query\, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question })
+  });
+  if (!res.ok) throw new Error('Failed to query assistant');
+  return res.json();
+};
