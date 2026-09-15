@@ -38,7 +38,18 @@
     "emergencyTitle": "Emergency & Safety",
     "emergencyDesc": "Quick access to verified local helpline contacts and SOS support.",
     "aiTitle": "Ask PujaPath Assistant",
-    "aiDesc": "Instant answers about themes, parking, accessibility, and pandal locations."
+    "aiDesc": "Instant answers about themes, parking, accessibility, and pandal locations.",
+    "featured": "Featured Pujas",
+    "featuredIntro": "Explore notable pandals, historic traditional Pujas, and community heritage sites in Purba Bardhaman.",
+    "viewAll": "View All Pujas",
+    "themeTitle": "2026 Cultural Themes",
+    "themeIntro": "Discover unique artistic themes, ecological initiatives, and heritage pandals for this year's celebration.",
+    "nearMeIntro": "Find approved pandals closest to your current location with route guidance.",
+    "openNearMe": "Find Near Me",
+    "openEmergency": "Emergency Helplines",
+    "noInventedNumbers": "All contacts verified directly with Purba Bardhaman civil authorities.",
+    "openAssistant": "Ask PujaPath AI",
+    "readAbout": "Learn About PujaPath"
   },
   "puja": {
     "title": "Explore Durga Pujas",
@@ -166,5 +177,51 @@
   "noRealPhotosTitle": "Photographs & Gallery",
   "noRealPhotosMsg": "Real Puja photographs will be added after verification.",
   "photoStatusNeeded": "OWNER / COMMITTEE PHOTO NEEDED",
-  "demoRecordBadge": "Demo / Unverified Record"
+  "demoRecordBadge": "Demo / Unverified Record",
+  "brand": {
+    "name": "PujaPath"
+  },
+  "meta": {
+    "siteTitle": "PujaPath — Purba Bardhaman Durga Puja Portal",
+    "siteDescription": "Discover authentic Durga Pujas in Purba Bardhaman with verified routes, timings, and cultural themes."
+  },
+  "hero": {
+    "title": "Welcome to PujaPath",
+    "subtitle": "Purba Bardhaman Durga Puja 2026",
+    "lead": "Explore authentic Durga Pujas across Purba Bardhaman with verified cultural heritage, pandal locations, and community updates.",
+    "explorePuja": "Explore Pujas",
+    "exploreMap": "View Live Map",
+    "artworkCredit": "Vintage Bengali Cultural Artwork"
+  },
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "nearMe": "Near Me",
+    "emergency": "Emergency",
+    "assistant": "AI Assistant",
+    "about": "About",
+    "search": "Search",
+    "searchPlaceholder": "Search by puja name, area, or theme...",
+    "language": "Language",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "skipToContent": "Skip to main content"
+  },
+  "pujaCard": {
+    "notFound": "Puja not found",
+    "placeholderVisual": "Pandal representation coming soon",
+    "realPhotoAlt": "Authorized photograph of"
+  },
+  "pages": {
+    "notFound": {
+      "title": "Page Not Found"
+    }
+  },
+  "parking": "Parking Available",
+  "toilet": "Restrooms",
+  "food": "Food & Prasad",
+  "medical_assistance": "Medical Camp",
+  "search": "Search",
+  "sort": "Sort",
+  "theme": "Theme"
 }
